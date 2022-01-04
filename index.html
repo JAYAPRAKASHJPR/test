@@ -9,11 +9,28 @@
 <body>
 
   
-     <form>
-        <input type = text>
-        </form>
-        
-    
+<p>JS </p>
+    <script>
+        var arr = [43,564,32,215,65,43,69,43,564,97,97,98];
+      
+        for(let i = 0 ; i < arr.length  ; i ++)
+        {
+            for (let j = i+1 ; j < arr.length; j++)
+            {
+                if (arr[i] === arr[j])
+                   {
+                    for(let k = j ; k < arr.length ; k++)
+                     {
+                         arr[k] = arr[k+1]
+                     }
+                      arr.length--;
+                  }    
+                       
+            } 
+         
+        }
+   console.log(arr)
+    </script>
     
 
 </body>

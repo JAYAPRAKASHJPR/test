@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = 13 ;
+        let prime = true;
+        for(let i = 1 ; 10 > i ; i++){
+         if((i !== 1) && (i!==n)){
+             
+            if ((n % i) == 0){
+                 prime = false;
+                 break;
+              }
+         }
+           
+        }
+        if (prime === true){
+            console.log("The number is prime")
+        }
+        else {
+            console.log("The number is not prime")
+        }
+    </script>
+</body>
+</html>
